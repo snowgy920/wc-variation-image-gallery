@@ -1,0 +1,67 @@
+/*
+Theme Name: Porto Child - Variation
+Theme URI: https://www.portotheme.com/wordpress/porto
+Author: P-THEMES
+Author URI: https://www.portotheme.com/
+Description: Porto Responsive WordPress + eCommerce Theme.
+Version: 1.1
+Template: porto
+License: Commercial
+License URI: http://themeforest.net/licenses/regular_extended
+Tags: woocommerce, corporate, ecommerce, responsive, blue, black, green, white, light, dark, red, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+*/
+
+/*************** ADD YOUR CUSTOM CSS HERE  ***************/
+.product-layout-transparent .woo-variation-gallery-wrapper .woo-variation-gallery-container {
+    display: flex;
+}
+.product-layout-transparent .woo-variation-gallery-slider-wrapper {
+    order: 1;
+    overflow: hidden;
+    width: 80%;
+}
+.product-layout-transparent .woo-variation-gallery-thumbnail-wrapper {
+    order: 0;
+    width: 20%;
+}
+.woo-variation-gallery-wrapper .wvg-gallery-thumbnail-image.current-thumbnail img {
+    border: 1px solid #e3003d;
+}
+.woo-variation-gallery-wrapper .wvg-gallery-thumbnail-image {
+    opacity: 1;
+}
+.product-layout-transparent .woo-variation-gallery-wrapper .woo-variation-gallery-thumbnail-slider {
+    display: flex;
+    flex-direction: column;
+}
+.product-layout-transparent .woo-variation-product-gallery-thumbnail-columns-6 .woo-variation-gallery-thumbnail-slider:not(.slick-initialized) > div {
+    width: 100%;
+}
+.product-layout-transparent .woo-variation-gallery-thumbnail-slider:not(.slick-initialized) > div {
+    padding-right: 10px;
+}
+.woo-variation-gallery-wrapper .woo-variation-gallery-trigger {
+    width: auto;
+    height: auto;
+    background: transparent;
+    top: auto;
+    bottom: 0;
+    right: 0;
+}
+.dashicons-search {
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+}
+.dashicons-search:before {
+    content: '\e873';
+    font-family: 'porto';
+    font-size: 14px;
+    color: #222529;
+}
+.woo-variation-gallery-slider-wrapper:hover .dashicons-search {
+    opacity: 1;
+}
+.pswp__caption {
+    display: none;
+}
