@@ -29,7 +29,7 @@
                 }
 
                 if (theme.product_zoom && (!('ontouchstart' in document) || (('ontouchstart' in document) && theme.product_zoom_mobile))) {
-                    $('.woo-variation-gallery-slider .wvg-gallery-image img.wp-post-image').each(function() {
+                    $('.woo-variation-gallery-slider .wvg-gallery-image img').each(function() {
                         var $this = $(this);
                         zoomConfig.zoomContainer = $this.parent();
                         if ($.fn.elevateZoom) {
